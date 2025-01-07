@@ -3,7 +3,7 @@ const app = express()
 const mongoDB = require('./db')
 require('dotenv').config(); // Load environment variables
 
-const port = process.env.PORT
+const port = process.env.PORT || 8000
 console.log(port)
 mongoDB();
 
